@@ -1,0 +1,35 @@
+# Python compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs and reports
+*.log
+reports/
+allure-results/
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Package/distribution files
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Pytest cache
+.pytest_cache/
+
+# Optional: dependency manager
+pip-log.txt
