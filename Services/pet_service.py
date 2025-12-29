@@ -1,5 +1,4 @@
 import requests
-
 class PetService:
     def __init__(self, base_url, headers, timeout):
         self.base_url = base_url
