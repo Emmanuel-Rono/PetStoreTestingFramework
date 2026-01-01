@@ -1,3 +1,4 @@
+
 import requests
 class PetService:
     def __init__(self, base_url, headers, timeout):
@@ -12,12 +13,11 @@ class PetService:
             headers=self.headers,
             timeout=self.timeout
         )
-
-    def get_pet_by_id(self, pet_id):
+    def get_pet_by_id (self, pet_id):
         return requests.get(
             url=f"{self.base_url}/pet/{pet_id}",
-            headers=self.headers,
-            timeout=self.timeout
+            headers = self.headers,
+            timeout = self.timeout
         )
 
     def update_pet(self, payload):
