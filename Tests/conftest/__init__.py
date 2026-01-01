@@ -19,3 +19,17 @@ def pet_service(app_config):
         headers=app_config.headers,
         timeout=app_config.timeout
     )
+
+@pytest.fixture
+def created_pet(pet_service, valid_pet_payload):
+
+    # Create
+    create_response = pet_service.add_pet(valid_pet_payload)
+    pet_data = create_response.json()
+
+    pet_id = pet_data["id"]
+
+    yield pet_data
+
+    # Cleanup
+    pet_service.delete_pet(pet_id)
