@@ -27,7 +27,7 @@ class PetService:
             headers=self.headers,
             timeout=self.timeout
         )
-
+#delete pet service
     def delete_pet(self, pet_id):
         return requests.delete(
             url=f"{self.base_url}/pet/{pet_id}",
