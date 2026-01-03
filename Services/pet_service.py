@@ -19,7 +19,7 @@ class PetService:
             headers = self.headers,
             timeout = self.timeout
         )
-
+#update_pet service
     def update_pet(self, payload):
         return requests.put(
             url=f"{self.base_url}/pet",
