@@ -12,3 +12,4 @@ class Config:
         self.headers = DEFAULT_HEADERS
         self.timeout = DEFAULT_TIMEOUT
 config = Config()
+

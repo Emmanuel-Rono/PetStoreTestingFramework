@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12027fdb-0a19-48b7-8daf-67266342ba8a" name="Changes" comment="" />
+    <list default="true" id="12027fdb-0a19-48b7-8daf-67266342ba8a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Data/pet_payload.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/api_tests/test_create_pet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conf/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Conf/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Services/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/conftest/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/conftest/__init__.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
