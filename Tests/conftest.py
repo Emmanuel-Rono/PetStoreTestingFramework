@@ -1,5 +1,5 @@
 import pytest
-from Conf.config import config
+from Configuration.config import config
 from Data.pet_payload import pet_payload_factory
 from Services import PetService
 

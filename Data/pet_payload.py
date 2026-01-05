@@ -1,6 +1,4 @@
 import random
-
-
 def pet_payload_factory(
     pet_id=None,
     name="doggie",

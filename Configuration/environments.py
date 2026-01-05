@@ -1,4 +1,4 @@
-# Conf/environments.py
+# Configuration/environments.py
 
 ENVIRONMENTS = {
     "dev": {

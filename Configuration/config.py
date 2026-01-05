@@ -1,7 +1,7 @@
-# Conf/config.py
+# Configuration/config.py
 import os
-from Conf.settings import DEFAULT_HEADERS, DEFAULT_TIMEOUT
-from Conf.environments import ENVIRONMENTS
+from Configuration.settings import DEFAULT_HEADERS, DEFAULT_TIMEOUT
+from Configuration.environments import ENVIRONMENTS
 
 class Config:
     def __init__(self):

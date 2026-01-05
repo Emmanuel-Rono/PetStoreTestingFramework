@@ -1,4 +1,4 @@
-# Conf/settings.py
+# Configuration/settings.py
 
 DEFAULT_TIMEOUT = 10
 
