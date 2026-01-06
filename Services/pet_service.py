@@ -19,14 +19,7 @@ class PetService:
             headers = self.headers,
             timeout = self.timeout
         )
-#update_pet service
-    def update_pet(self, payload):
-        return requests.put(
-            url=f"{self.base_url}/pet",
-            json=payload,
-            headers=self.headers,
-            timeout=self.timeout
-        )
+
 #delete pet service
     def delete_pet(self, pet_id):
         return requests.delete(
@@ -34,3 +27,12 @@ class PetService:
             headers=self.headers,
             timeout=self.timeout
         )
+
+ # update_pet service
+    def update_pet(self, payload):
+            return requests.put(
+                url=f"{self.base_url}/pet",
+                json=payload,
+                headers=self.headers,
+                timeout=self.timeout
+                )
