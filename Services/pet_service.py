@@ -20,15 +20,19 @@ class PetService:
             timeout = self.timeout
         )
 
-#delete pet service
-    def delete_pet(self, pet_id):
-        return requests.delete(
-            url=f"{self.base_url}/pet/{pet_id}",
-            headers=self.headers,
+    def delete_pet(self, pet_id: int):
+        """
+        Delete a pet by ID using DELETE /pet/{petId}
+        """
+        url = f"{self.base_url}/pet/{pet_id}"
+        response = self.session.delete(
+            url,
             timeout=self.timeout
         )
+        return response
 
- # update_pet service
+
+    # update_pet service
     def update_pet(self, payload):
             return requests.put(
                 url=f"{self.base_url}/pet",
