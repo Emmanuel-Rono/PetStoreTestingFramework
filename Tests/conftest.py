@@ -28,11 +28,15 @@ def sold_pet_payload():
 @pytest.fixture
 def created_pet(pet_service, valid_pet_payload):
     """Creates and cleans up a pet resource."""
-    create_response = pet_service.add_pet(valid_pet_payload)
+    create_response= pet_service.add_pet(valid_pet_payload)
     pet_data = create_response.json()
     pet_id = pet_data["id"]
 
     yield pet_data
+    try:
+        pet_service.delete_pet(pet_id)
+    except Exception:
+        pass
 
-    # Cleanup
-    pet_service.delete_pet(pet_id)
+
+

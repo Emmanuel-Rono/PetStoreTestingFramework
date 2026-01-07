@@ -39,3 +39,12 @@ class PetService:
                 json=payload,
                 timeout=self.timeout
                 )
+
+    def find_pet_by_status(self, status:str):
+        url= f"{self.base_url}/pet/findByStatus"
+        response_of_find_by_status = self.session.get(
+            url=url,
+            params={'status':status},
+            timeout=self.timeout
+        )
+        return  response_of_find_by_status
