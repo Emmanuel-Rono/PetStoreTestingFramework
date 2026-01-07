@@ -1,22 +1,22 @@
 
 import requests
 class PetService:
-    def __init__(self, base_url, headers, timeout):
+    def __init__(self, base_url, headers=None,timeout=10):
         self.base_url = base_url
-        self.headers = headers
         self.timeout = timeout
+        self.session= requests.Session()
+        if headers:
+            self.session.headers.update(headers)
 
     def add_pet(self, payload):
-        return requests.post(
+        return self.session.post(
             url=f"{self.base_url}/pet",
             json=payload,
-            headers=self.headers,
             timeout=self.timeout
         )
     def get_pet_by_id (self, pet_id):
-        return requests.get(
+        return self.session.get(
             url=f"{self.base_url}/pet/{pet_id}",
-            headers = self.headers,
             timeout = self.timeout
         )
 
@@ -34,9 +34,8 @@ class PetService:
 
     # update_pet service
     def update_pet(self, payload):
-            return requests.put(
+            return self.session.put(
                 url=f"{self.base_url}/pet",
                 json=payload,
-                headers=self.headers,
                 timeout=self.timeout
                 )
