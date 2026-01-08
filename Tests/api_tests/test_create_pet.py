@@ -14,7 +14,6 @@ def test_create_pet(pet_service,valid_pet_payload):
     assert response_body.get("photoUrls") == valid_pet_payload["photoUrls"]
     assert response_body.get("tags") == valid_pet_payload["tags"]
 
-
     assert "tags" in response_body
     assert isinstance(response_body["tags"], list)
     assert response_body["tags"][0]["id"] == valid_pet_payload["tags"][0]["id"]

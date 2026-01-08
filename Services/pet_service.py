@@ -48,3 +48,18 @@ class PetService:
             timeout=self.timeout
         )
         return  response_of_find_by_status
+
+    def update_pet_form (self,pet_id:int,name: str= None, status: str= None):
+        url = f"{self.base_url}/pet/{pet_id}"
+        data = {}
+        if name:
+            data["name"] = name
+        if status:
+            data["status"] = status
+
+        response =self.session.post(
+            url,
+            data=data,
+            timeout=self.timeout
+        )
+        return response
