@@ -60,6 +60,26 @@ class PetService:
         response =self.session.post(
             url,
             data=data,
+            headers={"Content-Type": "application/x-www-form-urlencoded"},
             timeout=self.timeout
         )
+        return response
+
+    def upload_pet_image(self,pet_id:int, image_url:str, metadata:str=None):
+        url =f"{self.base_url}/pet/{pet_id}/uploadImage"
+        files ={
+            "file": open(image_url, "rb")
+        }
+        data ={}
+        if metadata:
+            data["metadata"] = metadata
+
+        response = self.session.post(
+                url,
+                headers={"Content-Type": "application/x-www-form-urlencoded"},
+                files=files,
+                data =data,
+                timeout=self.timeout
+            )
+        files["files"].close()
         return response

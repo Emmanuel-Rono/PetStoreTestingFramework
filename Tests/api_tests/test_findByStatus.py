@@ -13,5 +13,6 @@ def test_find_by_status(pet_service, sold_pet_payload):
     assert  isinstance(response_body,list)
     assert  len(response_body) > 0
 
+    #Checking if status is actually marked sold
     for pet in response_body:
         assert pet["status"] =="sold"

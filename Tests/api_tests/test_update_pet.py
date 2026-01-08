@@ -16,5 +16,6 @@ def test_update_pet(pet_service, created_pet):
     assert response_body["id"] == created_pet["id"]
 
     # Assert updates
+
     assert response_body["name"] == "Updated-Doggie"
     assert response_body["status"] == "sold"
