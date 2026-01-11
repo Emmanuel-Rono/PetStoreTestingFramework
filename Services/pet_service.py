@@ -1,5 +1,6 @@
 
 import requests
+import os
 class PetService:
     def __init__(self, base_url, headers=None,timeout=10):
         self.base_url = base_url
@@ -65,21 +66,40 @@ class PetService:
         )
         return response
 
-    def upload_pet_image(self,pet_id:int, image_url:str, metadata:str=None):
-        url =f"{self.base_url}/pet/{pet_id}/uploadImage"
-        files ={
-            "file": open(image_url, "rb")
-        }
-        data ={}
-        if metadata:
-            data["metadata"] = metadata
 
-        response = self.session.post(
-                url,
-                headers={"Content-Type": "application/x-www-form-urlencoded"},
-                files=files,
-                data =data,
-                timeout=self.timeout
-            )
-        files["files"].close()
-        return response
+    def upload_image(self, pet_id: int, image_path: str, metadata: str = None):
+            """
+            Upload an image for a pet using /pet/{petId}/uploadImage
+            """
+            url = f"{self.base_url}/pet/{pet_id}/uploadImage"
+            data = {}
+            if metadata:
+                data["additionalMetadata"] = metadata
+
+            # Detect MIME type based on extension
+            ext = os.path.splitext(image_path)[1].lower()
+            if ext == ".png":
+                mime_type = "image/png"
+            elif ext in [".jpg", ".jpeg"]:
+                mime_type = "image/jpeg"
+            else:
+                raise ValueError("Unsupported image type. Use PNG or JPEG.")
+
+            # Use `with open` to ensure file is closed safely (Windows-safe)
+            with open(image_path, "rb") as f:
+                files = {
+                    "file": (os.path.basename(image_path), f, mime_type)
+                }
+                response = self.session.post(
+                    url,
+                    files=files,
+                    data=data,
+                    timeout=self.timeout
+                )
+
+            return response
+
+
+
+
+

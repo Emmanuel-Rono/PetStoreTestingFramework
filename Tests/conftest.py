@@ -1,7 +1,7 @@
 import pytest
 from Configuration.config import config
 from Data.pet_payload import pet_payload_factory
-from Services import PetService
+from Services.pet_service import PetService
 
 @pytest.fixture(scope="session")
 def app_config():
