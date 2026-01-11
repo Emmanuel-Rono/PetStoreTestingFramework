@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/pet_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/Services/pet_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/api_tests/test_upload_pet_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/api_tests/test_upload_pet_image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/conftest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +22,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Tests/api_tests" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -40,9 +39,10 @@
     "Python tests.Python tests for test_findByStatus.test_find_by_status.executor": "Run",
     "Python tests.Python tests for test_update_pet.test_update_pet.executor": "Run",
     "Python tests.Python tests for test_update_pet_with_form_data.test_update_pet_with_form_data.executor": "Run",
+    "Python tests.Python tests for test_upload_pet_image.test_upload_pet_image.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/Codes/PetStoreTestingFramework",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
@@ -53,22 +53,7 @@
       <recent name="D:\Codes\PetStoreTestingFramework\Services" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_update_pet_with_form_data.test_update_pet_with_form_data">
-    <configuration name="Python tests for api_tests" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="PetStoreTestingFramework" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests/api_tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;api_tests&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Python tests for test_upload_pet_image.test_upload_pet_image">
     <configuration name="Python tests for test_create_pet.test_create_pet" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PetStoreTestingFramework" />
       <option name="ENV_FILES" value="" />
@@ -129,6 +114,21 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_upload_pet_image.test_upload_pet_image" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PetStoreTestingFramework" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests/api_tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_upload_pet_image.test_upload_pet_image&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in bin" type="tests" factoryName="py.test" nameIsGenerated="true">
       <module name="PetStoreTestingFramework" />
       <option name="ENV_FILES" value="" />
@@ -149,19 +149,19 @@
     </configuration>
     <list>
       <item itemvalue="Python tests.pytest in bin" />
+      <item itemvalue="Python tests.Python tests for test_upload_pet_image.test_upload_pet_image" />
       <item itemvalue="Python tests.Python tests for test_update_pet_with_form_data.test_update_pet_with_form_data" />
       <item itemvalue="Python tests.Python tests for test_findByStatus.test_find_by_status" />
       <item itemvalue="Python tests.Python tests for test_update_pet.test_update_pet" />
       <item itemvalue="Python tests.Python tests for test_create_pet.test_create_pet" />
-      <item itemvalue="Python tests.Python tests for api_tests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_upload_pet_image.test_upload_pet_image" />
         <item itemvalue="Python tests.Python tests for test_update_pet_with_form_data.test_update_pet_with_form_data" />
         <item itemvalue="Python tests.Python tests for test_findByStatus.test_find_by_status" />
         <item itemvalue="Python tests.Python tests for test_create_pet.test_create_pet" />
         <item itemvalue="Python tests.Python tests for test_update_pet.test_update_pet" />
-        <item itemvalue="Python tests.Python tests for api_tests" />
       </list>
     </recent_temporary>
   </component>
@@ -189,6 +189,11 @@
           <url>file://$PROJECT_DIR$/Tests/api_tests/test_findByStatus.py</url>
           <line>3</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Tests/api_tests/test_upload_pet_image.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
