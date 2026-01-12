@@ -20,7 +20,6 @@ class PetService:
             url=f"{self.base_url}/pet/{pet_id}",
             timeout = self.timeout
         )
-
     def delete_pet(self, pet_id: int):
         """
         Delete a pet by ID using DELETE /pet/{petId}
@@ -31,8 +30,6 @@ class PetService:
             timeout=self.timeout
         )
         return response
-
-
     # update_pet service
     def update_pet(self, payload):
             return self.session.put(
@@ -57,7 +54,6 @@ class PetService:
             data["name"] = name
         if status:
             data["status"] = status
-
         response =self.session.post(
             url,
             data=data,
@@ -65,8 +61,6 @@ class PetService:
             timeout=self.timeout
         )
         return response
-
-
     def upload_image(self, pet_id: int, image_path: str, metadata: str = None):
         """
         Upload an image for a pet using /pet/{petId}/uploadImage
@@ -75,7 +69,6 @@ class PetService:
         data = {}
         if metadata:
             data["additionalMetadata"] = metadata
-
         self.session.headers.pop("Content-Type", None)
 
         # Detect MIME type based on extension
@@ -98,7 +91,6 @@ class PetService:
                 data=data,
                 timeout=self.timeout
             )
-
         return response
 
 

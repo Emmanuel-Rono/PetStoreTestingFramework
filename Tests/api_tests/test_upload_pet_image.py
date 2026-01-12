@@ -12,8 +12,6 @@ def choose_image_file():
     )
     root.destroy()
     return file_path
-
-
 def test_upload_pet_image(pet_service, created_pet):
     pet_id = created_pet["id"]
 
@@ -26,7 +24,6 @@ def test_upload_pet_image(pet_service, created_pet):
         image_path=image_path,
         metadata="profile picture"
     )
-
     # Check response
     assert response.status_code == 200, f"Upload failed: {response.status_code} - {response.text}"
     body = response.json()
