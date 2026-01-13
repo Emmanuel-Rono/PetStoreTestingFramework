@@ -13,7 +13,6 @@ def pytest_addoption(parser):
         help="Environment to run tests against (dev, qa, prod)"
     )
 
-
 @pytest.fixture(scope="session")
 def app_config(request):
     """
@@ -22,7 +21,6 @@ def app_config(request):
     """
     env = request.config.getoption("--env")
     return Config(env=env)
-
 
 @pytest.fixture(scope="session")
 def pet_service(app_config):
@@ -35,18 +33,15 @@ def pet_service(app_config):
         timeout=app_config.timeout
     )
 
-
 @pytest.fixture
 def valid_pet_payload():
     """Provides a valid pet payload."""
     return pet_payload_factory()
 
-
 @pytest.fixture
 def sold_pet_payload():
     """Provides a valid pet payload with status 'sold'."""
     return pet_payload_factory(status="sold")
-
 
 @pytest.fixture
 def created_pet(pet_service, valid_pet_payload):
@@ -58,7 +53,6 @@ def created_pet(pet_service, valid_pet_payload):
     pet_id = pet_data["id"]
 
     yield pet_data
-
     try:
         pet_service.delete_pet(pet_id)
     except Exception:

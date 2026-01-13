@@ -9,6 +9,7 @@ class PetService:
         if headers:
             self.session.headers.update(headers)
 
+#add_pet service
     def add_pet(self, payload):
         return self.session.post(
             url=f"{self.base_url}/pet",
@@ -61,6 +62,7 @@ class PetService:
             timeout=self.timeout
         )
         return response
+
     def upload_image(self, pet_id: int, image_path: str, metadata: str = None):
         """
         Upload an image for a pet using /pet/{petId}/uploadImage
