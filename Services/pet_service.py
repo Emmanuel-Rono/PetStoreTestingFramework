@@ -12,10 +12,12 @@ class PetService:
 #add_pet service
     def add_pet(self, payload):
         return self.session.post(
-            url=f"{self.base_url}/pet",
-            json=payload,
+            url = f"{self.base_url}/pet",
+            data = payload,
             timeout=self.timeout
+
         )
+
     def get_pet_by_id (self, pet_id):
         return self.session.get(
             url=f"{self.base_url}/pet/{pet_id}",
