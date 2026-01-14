@@ -12,6 +12,8 @@ def choose_image_file():
     )
     root.destroy()
     return file_path
+
+@pytest.mark.regression
 def test_upload_pet_image(pet_service, created_pet):
     pet_id = created_pet["id"]
 

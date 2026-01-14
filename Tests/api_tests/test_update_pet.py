@@ -1,3 +1,7 @@
+import pytest
+
+
+@pytest.mark.regression
 def test_update_pet(pet_service, created_pet):
     # Arrange: modify existing pet
     updated_payload = created_pet.copy()

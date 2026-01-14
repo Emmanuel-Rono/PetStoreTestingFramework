@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12027fdb-0a19-48b7-8daf-67266342ba8a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/pet_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/Services/pet_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/api_tests/test_create_pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/api_tests/test_create_pet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/api_tests/test_delete_pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/api_tests/test_delete_pet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/api_tests/test_findByStatus.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/api_tests/test_findByStatus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/api_tests/test_update_pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/api_tests/test_update_pet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/api_tests/test_update_pet_with_form_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/api_tests/test_update_pet_with_form_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/api_tests/test_upload_pet_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/api_tests/test_upload_pet_image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +28,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Tests/api_tests" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -31,28 +38,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python tests.Python tests for test_create_pet.test_create_pet.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_findByStatus.test_find_by_status.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_update_pet.test_update_pet.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_update_pet_with_form_data.test_update_pet_with_form_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_upload_pet_image.test_upload_pet_image.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Codes/PetStoreTestingFramework&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests for test_create_pet.test_create_pet.executor": "Run",
+    "Python tests.Python tests for test_findByStatus.test_find_by_status.executor": "Run",
+    "Python tests.Python tests for test_update_pet.test_update_pet.executor": "Run",
+    "Python tests.Python tests for test_update_pet_with_form_data.test_update_pet_with_form_data.executor": "Run",
+    "Python tests.Python tests for test_upload_pet_image.test_upload_pet_image.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Codes/PetStoreTestingFramework",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Codes\PetStoreTestingFramework\Services" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_upload_pet_image.test_upload_pet_image">
+  <component name="RunManager" selected="Python tests.Python tests for test_create_pet.test_create_pet">
     <configuration name="Python tests for test_create_pet.test_create_pet" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PetStoreTestingFramework" />
       <option name="ENV_FILES" value="" />
@@ -147,19 +154,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Python tests for test_create_pet.test_create_pet" />
+      <item itemvalue="Python tests.pytest in bin" />
+      <item itemvalue="Python tests.Python tests for test_upload_pet_image.test_upload_pet_image" />
+      <item itemvalue="Python tests.Python tests for test_update_pet_with_form_data.test_update_pet_with_form_data" />
       <item itemvalue="Python tests.Python tests for test_findByStatus.test_find_by_status" />
       <item itemvalue="Python tests.Python tests for test_update_pet.test_update_pet" />
-      <item itemvalue="Python tests.Python tests for test_update_pet_with_form_data.test_update_pet_with_form_data" />
-      <item itemvalue="Python tests.Python tests for test_upload_pet_image.test_upload_pet_image" />
-      <item itemvalue="Python tests.pytest in bin" />
+      <item itemvalue="Python tests.Python tests for test_create_pet.test_create_pet" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_create_pet.test_create_pet" />
         <item itemvalue="Python tests.Python tests for test_upload_pet_image.test_upload_pet_image" />
         <item itemvalue="Python tests.Python tests for test_update_pet_with_form_data.test_update_pet_with_form_data" />
         <item itemvalue="Python tests.Python tests for test_findByStatus.test_find_by_status" />
-        <item itemvalue="Python tests.Python tests for test_create_pet.test_create_pet" />
         <item itemvalue="Python tests.Python tests for test_update_pet.test_update_pet" />
       </list>
     </recent_temporary>
@@ -186,13 +193,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Tests/api_tests/test_findByStatus.py</url>
-          <line>3</line>
+          <line>5</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Tests/api_tests/test_upload_pet_image.py</url>
-          <line>14</line>
+          <line>16</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Tests/api_tests/test_upload_pet_image.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

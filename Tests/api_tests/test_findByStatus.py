@@ -1,6 +1,8 @@
+import pytest
+
 from Tests.conftest import pet_service
 
-
+@pytest.mark.regression
 def test_find_by_status(pet_service, sold_pet_payload):
     create_sold_pet_response = pet_service.add_pet(sold_pet_payload)
     assert create_sold_pet_response.status_code == 200

@@ -13,7 +13,7 @@ class PetService:
     def add_pet(self, payload):
         return self.session.post(
             url = f"{self.base_url}/pet",
-            data = payload,
+            json = payload,
             timeout=self.timeout
 
         )

@@ -1,3 +1,6 @@
+import pytest
+
+@pytest.mark.regression
 def test_delete_pet(pet_service, created_pet):
     pet_id = created_pet["id"]
 

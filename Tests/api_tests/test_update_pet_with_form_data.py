@@ -1,3 +1,7 @@
+import pytest
+
+
+@pytest.mark.regression
 def test_update_pet_with_form_data(pet_service,created_pet):
     pet_id=created_pet["id"]
 
