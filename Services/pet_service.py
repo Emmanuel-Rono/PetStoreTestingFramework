@@ -1,6 +1,8 @@
 
 import requests
 import os
+#Service depend on outside libraries like Requests
+
 class PetService:
     def __init__(self, base_url, headers=None,timeout=10):
         self.base_url = base_url
