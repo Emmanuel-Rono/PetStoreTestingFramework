@@ -3,6 +3,9 @@ from unicodedata import category
 
 from Tests.conftest import pet_service, valid_pet_payload
 
+
+#Test depend on Services
+
 @pytest.mark.smoke
 def test_create_pet(pet_service,valid_pet_payload):
     create_pet_response = pet_service.add_pet(valid_pet_payload)
